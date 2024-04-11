@@ -14,4 +14,4 @@ Added margin between bars
 ![Screen Shot 2024-04-11 at 3 54 42 PM](https://github.com/rmorales723/sorting-visualizer/assets/72527380/5dc4c2a1-6bed-4100-ac81-62b4c160c539)
 
 Making progress!
-Implemented bubbleSort(), and animated the visualizer as the bars are swapped in the swaps-array changing color to red to show the new bars as they shift and realign from left, to right.
+Implemented bubbleSort(), and animated the visualizer as the indices are swapped in the swaps-array changing color to red to show the new bars as they shift and realign from left, to right.
