@@ -1,4 +1,4 @@
-const n=40;
+const n=20;
 const array=[];
 
 init();
@@ -20,6 +20,9 @@ function playNote(freq){
     osc.stop(audioCtx.currentTime+dur);
     const node=audioCtx.createGain();
     node.gain.value=0.1;
+    node.gain.linearRampToValueAtTime(
+        0, audioCtx.currentTime+dur
+    );
     osc.connect(node);
     node.connect(audioCtx.destination);
 }
