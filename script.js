@@ -1,9 +1,9 @@
-const n=20;
+const n=40;
 const array=[];
 
 init();
 
-let audioCtc=null;
+let audioCtx=null;
 
 function playNote(freq){
     if(audioCtx==null){
@@ -50,6 +50,7 @@ if(move.type=="swap"){
 
     playNote(200+array[i]*500);
     playNote(200+array[j]*500);
+
     showBars(move);
     setTimeout(function(){
         animate(moves);
