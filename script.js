@@ -3,6 +3,19 @@ const array=[];
 
 init();
 
+let audioCtc=null;
+
+functio playNote(freq){
+    if(audioCtx==null){
+        audioCtx=new(
+            AudioContext ||
+            webkitAudioContext ||
+            window.webkitAudioContext  
+        )();
+    }
+    
+}
+
 function init(){
     for(let i=0;i<n;i++){
     array[i]=Math.random();
@@ -29,7 +42,7 @@ if(move.type=="swap"){
     showBars(move);
     setTimeout(function(){
         animate(moves);
-    },200);
+    },50);
 }
 
 function bubbleSort(array){
