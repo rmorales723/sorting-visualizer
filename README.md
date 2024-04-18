@@ -15,3 +15,9 @@ Added margin between bars
 
 Making progress!
 Implemented bubbleSort(), and animated the visualizer as the indices are swapped in the swaps-array changing color to red to show the new bars as they shift and realign from left, to right.
+
+![Screen Shot 2024-04-18 at 7 12 58 PM](https://github.com/rmorales723/sorting-visualizer/assets/72527380/215572a3-f870-4832-868e-08517c452f52)
+Harnassed oscillator function to create sound as algorithm sorts bars from largest to smallest.
+
+![Screen Shot 2024-04-18 at 7 14 45 PM](https://github.com/rmorales723/sorting-visualizer/assets/72527380/b5bc530a-e53d-4f89-99b4-618858fa4c81)
+Post execution of sorting.
