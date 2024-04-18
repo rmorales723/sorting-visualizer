@@ -5,7 +5,7 @@ init();
 
 let audioCtc=null;
 
-functio playNote(freq){
+function playNote(freq){
     if(audioCtx==null){
         audioCtx=new(
             AudioContext ||
@@ -18,7 +18,10 @@ functio playNote(freq){
     osc.frequency.value=freq;
     osc.start();
     osc.stop(audioCtx.currentTime+dur);
-    osc.connect(audioCtx.destination);
+    const node=audioCtx.createGain();
+    node.gain.value=0.1;
+    osc.connect(node);
+    node.connect(audioCtx.destination);
 }
 
 function init(){
