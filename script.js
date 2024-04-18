@@ -13,7 +13,12 @@ functio playNote(freq){
             window.webkitAudioContext  
         )();
     }
-    
+    const dur=0.1;
+    const osc=audioCtx.createOscillator();
+    osc.frequency.value=freq;
+    osc.start();
+    osc.stop(audioCtx.currentTime+dur);
+    osc.connect(audioCtx.destination);
 }
 
 function init(){
@@ -39,6 +44,9 @@ const [i,j]=move.indices;
 
 if(move.type=="swap"){
     [array[i],array[j]]=[array[j],array[i]]; }
+
+    playNote(200+array[i]*500);
+    playNote(200+array[j]*500);
     showBars(move);
     setTimeout(function(){
         animate(moves);
